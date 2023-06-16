@@ -1,0 +1,121 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "schema": {
+        "fields": [
+          {
+            "type": "input",
+            "props": {
+              "inputType": "text",
+              "label": "Name",
+              "model": "name",
+              "required": true,
+              "disabled": false,
+              "placeholder": "User's name"
+            }
+          },
+          {
+            "type": "input",
+            "props": {
+              "inputType": "number",
+              "label": "Age",
+              "model": "age"
+            }
+          },
+          {
+            "type": "input",
+            "props": {
+              "inputType": "email",
+              "label": "E-mail",
+              "model": "email",
+              "placeholder": "User's e-mail address",
+              "required": true
+            }
+          },
+          {
+            "type": "textarea",
+            "props": {
+              "label": "About me",
+              "model": "about"
+            }
+          },
+          {
+            "type": "select",
+            "props": {
+              "label": "Skills",
+              "model": "skills",
+              "multi": true,
+              "required": true,
+              "multiSelect": true,
+              "values": [
+                "HTML5",
+                "Javascript",
+                "CSS3",
+                "CoffeeScript",
+                "AngularJS",
+                "ReactJS",
+                "VueJS"
+              ]
+            }
+          },
+          {
+            "type": "button",
+            "props": {
+              "text": "Submit",
+              "on": {"arguments":"", "body": "alert('form submitted')"}
+            }
+          },
+          {
+            "type": "button",
+            "props": {
+              "text": "Cancel",
+              "on": {"arguments":"", "body": "alert('form canceled')"}
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "schema": {
+        "fields": [
+          {
+            "type": "input",
+            "props": {
+              "inputType": "text",
+              "label": "Login",
+              "model": "login",
+              "required": true,
+              "disabled": false,
+              "placeholder": "User's name"
+            }
+          },
+          {
+            "type": "input",
+            "props": {
+              "inputType": "password",
+              "label": "Password",
+              "model": "password",
+              "required": true
+            }
+          },
+          {
+            "type": "checkbox",
+            "props": {
+              "label": "remember me",
+              "model": "remember"
+            }
+          },
+          {
+            "type": "button",
+            "props": {
+              "text": "Sign in",
+              "on": {"arguments":"", "body": "alert('logged in')"}
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

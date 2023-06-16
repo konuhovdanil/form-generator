@@ -1,0 +1,126 @@
+{
+  "schemas": [
+    {
+      "id": 1,
+      "title": "Input",
+      "props": {
+        "inputType": {
+          "type": "String",
+          "required": true
+        },
+        "label": {
+          "type": "String",
+          "required": true
+        },
+        "model": {
+          "type": "String",
+          "required": true
+        },
+        "disabled": {
+          "type": "Boolean",
+          "default": false
+        },
+        "required": {
+          "type": "Boolean",
+          "default": false
+        },
+        "placeholder": {
+          "type": "String",
+          "default": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "title": "Select",
+      "props": {
+        "label": {
+          "type": "String",
+          "required": true
+        },
+        "model": {
+          "type": "String",
+          "required": true
+        },
+        "disabled": {
+          "type": "Boolean",
+          "default": false
+        },
+        "required": {
+          "type": "Boolean",
+          "default": false
+        },
+        "multiSelect": {
+          "type": "Boolean",
+          "default": false
+        },
+        "values": {
+          "type": "Array",
+          "required": true
+        }
+      }
+    },
+    {
+      "id": 3,
+      "title": "Checkbox",
+      "props": {
+        "label": {
+          "type": "String",
+          "required": true
+        },
+        "model": {
+          "type": "String",
+          "required": true
+        },
+        "disabled": {
+          "type": "Boolean",
+          "default": false
+        },
+        "required": {
+          "type": "Boolean",
+          "default": false
+        }
+      }
+    },
+    {
+      "id": 4,
+      "title": "Textarea",
+      "props": {
+        "label": {
+          "type": "String",
+          "required": true
+        },
+        "model": {
+          "type": "String",
+          "required": true
+        },
+        "disabled": {
+          "type": "Boolean",
+          "default": false
+        },
+        "required": {
+          "type": "Boolean",
+          "default": false
+        }
+      }
+    },
+    {
+      "id": 5,
+      "title": "Button",
+      "props": {
+        "text": {
+          "type": "String",
+          "default": ""
+        },
+        "disabled": {
+          "type": "Boolean",
+          "default": false
+        },
+        "on": {
+          "arguments": "String",
+          "body": "String"
+        }
+      }
+    }
+  ]
+}
